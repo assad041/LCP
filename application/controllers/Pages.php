@@ -88,22 +88,16 @@
           $cans='cans'.$i;
           if($this->input->post($ans)==$this->input->post($cans)){
             $score++;
-
           }
-
         }
         $data['point']=$score;
         $data['score']=round( $score*4.75 + ($time/4));
 
+
       }
-
-
-
-
       $this->load->view('common/header',$data);
       $this->load->view('pages/'.$page, $data);
       $this->load->view('common/footer');
-
     }
 
 
