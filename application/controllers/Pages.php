@@ -55,7 +55,7 @@
       }
       else if($page=='startquiz'){
         $qn=$this->input->post('quizno');
-        $data['quiz']= $this->Post_model->get_quiz($qn);
+        $data['quiz']= $this->Post_model->get_20quiz($qn);
       }
       else if($page=='addquiz'){
         $qn=$this->input->post('quizno');
