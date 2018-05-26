@@ -167,7 +167,7 @@
                               <li><a href="variables">Variables &amp; Constants</a></li>
                               <li><a href="operators">Operators</a></li>
                               <li><a href="casting">Type Casting</a></li>
-                              <li><a href="#">Quiz</a></li>
+                              <li><a href="quiz?no=2">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
@@ -176,7 +176,7 @@
                               <li><a href="#">Nested if-else</a></li>
                               <li><a href="#">Switch Statement</a></li>
                               <li><a href="#">Conditional Operator</a></li>
-                              <li><a href="#">Quiz</a></li>
+                              <li><a href="quiz?no=3">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4 </span></a>
@@ -184,7 +184,7 @@
                                 <li><a href="#">Loop</a></li>
                                 <li><a href="#">Nested Loop</a></li>
                                 <li><a href="#">End of File (EOF)</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=4">Quiz</a></li>
                             </ul>
                         </li>
                         <li class="nav-small-cap">STRUCTURED C PROGRAMMING</li>
@@ -192,21 +192,21 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">Arrays </a></li>
                                 <li><a href="#">Multidimensional Arrays</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=5">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 2</span></a>
                             <ul aria-expanded="false" class="collapse">
                                <li><a href="#">String</a></li>
                                <li><a href="#">String Operation</a></li>
-                               <li><a href="#">Quiz</a></li>
+                               <li><a href="quiz?no=6">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">Fuction</a></li>
                                 <li><a href="#">Recurtion Function</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=7">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4 </span></a>
@@ -214,7 +214,7 @@
                                 <li><a href="#">Structure</a></li>
                                 <li><a href="#">Array of Structures </a></li>
                                 <li><a href="#">Structures within Structures</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=8">Quiz</a></li>
                             </ul>
                         </li>
                         <li class="nav-small-cap">DATA STRUCTURES &amp; ALGORITHMS</li>
@@ -225,7 +225,7 @@
                                 <li><a href="#">Greedy Algorithms</a></li>
                                 <li><a href="#">Divide and Conquer</a></li>
                                 <li><a href="#">Dynamic Programming</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=9">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 2 </span></a>
@@ -233,21 +233,21 @@
                                 <li><a href="#">Data Structures Basics</a></li>
                                 <li><a href="#">Array Data Structure</a></li>
                                 <li><a href="#">Linked List Basic</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=10">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">Stack</a></li>
                                 <li><a href="#">Queue</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=11">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="#">Linear Search</a></li>
                                 <li><a href="#">Binary Search</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=12">Quiz</a></li>
 
                             </ul>
                         </li>
@@ -256,7 +256,7 @@
                                 <li><a href="#">Bubble Sort</a></li>
                                 <li><a href="#">Merge Sort</a></li>
                                 <li><a href="#">Quick Sort</a></li>
-                                <li><a href="#">Quiz</a></li>
+                                <li><a href="quiz?no=13">Quiz</a></li>
 
 
                             </ul>
