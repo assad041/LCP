@@ -23,6 +23,13 @@
       return $query->result_array();
     }
 
+    public function get_20quiz($qn){
+      $this->db->order_by('rand()');
+      $this->db->limit(20);
+      $query = $this->db->get_where('quiz', array('quiz_no' => $qn));
+      return $query->result_array();
+    }
+
     public function get_quiz_by_id($id){
 
       $query = $this->db->get_where('quiz', array('quiz_id' => $id));
