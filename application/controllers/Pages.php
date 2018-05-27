@@ -92,7 +92,54 @@
         }
         $data['point']=$score;
         $data['score']=round( $score*4.75 + ($time/4));
+        $this->Post_model->set_score($qn,$score*4.75 + ($time/4));
 
+
+      }
+      else if($page=='quiz'){
+        $qn=$this->input->get('no');
+        $user_id=$this->session->userdata('user_id');
+        $max_quiz=$this->Post_model->get_max_quiz($user_id);
+        $score=$this->Post_model->get_score($user_id,$qn);
+        $data["max_quiz"]=$max_quiz;
+        $data["sc"]=0;
+        if($max_quiz>=$qn-1 || $qn==1){
+
+          if($score){
+            if($score>69){
+              $data["sc"]=1;
+            }
+
+            $time=$this->Post_model->get_score_time($user_id,$qn);
+            $start  = date_create($time);
+            $data["x"]=$time;
+            $today = date("Y-m-d H:i:s");
+            $data["y"]=$today;
+            $end 	= date_create($today);
+            $diff  	= date_diff( $start, $end );
+            $tt=($diff->h*60+$diff->i);
+
+            if($tt>=120){
+
+              $data["status"]=4;
+              $data["msg"]="Your Score is ".floor($score/4.75)."/20 Points (".round($score)."%). You can try again!";
+            }
+            else {
+              $tt=120-$tt;
+              $data["status"]=2;
+              $data["msg"]="Your Score is ".floor($score/4.75)."/20 Points (".round($score)."%). Please wait ".$tt." minutes for try again!";
+            }
+          }
+          else {
+            $data["status"]=1;
+            $data["msg"]="";
+          }
+
+        }
+        else {
+          $data["status"]=3;
+          $data["msg"]="Please pass the previous quiz to complete this quiz";
+        }
 
       }
       $this->load->view('common/header',$data);

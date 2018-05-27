@@ -36,6 +36,35 @@
       return $query->row_array();
     }
 
+    public function get_max_quiz($user_id){
+      $this->db->select_max('score_quiz_no');
+      $this->db->where('score_point >', '69.5');
+      $query = $this->db->get_where('score', array('user_id' =>$user_id))->row();
+      return $query->score_quiz_no;
+    }
+
+    public function get_score($user_id,$qn){
+      $query = $this->db->get_where('score', array('user_id' =>$this->session->userdata('user_id'),'score_quiz_no' =>$qn));
+      if($query->num_rows()){
+        $sc=$query->row_array();
+        return $sc["score_point"];
+      }
+      else {
+        return 0;
+      }
+    }
+
+    public function get_score_time($user_id,$qn){
+      $query = $this->db->get_where('score', array('user_id' =>$this->session->userdata('user_id'),'score_quiz_no' =>$qn));
+      if($query->num_rows()){
+        $sc=$query->row_array();
+        return $sc["score_update"];
+      }
+      else {
+        return 0;
+      }
+    }
+
 
     public function delete_quiz($qn){
 
@@ -50,6 +79,35 @@
         'user_pass' => $this->input->post('pass'),
        );
       return $this ->db->insert('user',$data);
+    }
+
+
+    public function set_score($qn,$score){
+      $data = array(
+        'user_id' => $this->session->userdata('user_id'),
+        'score_quiz_no' => $qn,
+        'score_point' => $score,
+        'score_update' => date("Y-m-d H:i:s"),
+        
+       );
+       $query = $this->db->get_where('score', array('user_id' =>$this->session->userdata('user_id'),'score_quiz_no' =>$qn));
+
+
+      if($query->num_rows()){
+        $sc=$query->row_array();
+        if($sc['score_point']<$score){
+          $this->db->where(array('user_id' =>$this->session->userdata('user_id'),'score_quiz_no' =>$qn));
+          $this->db->update("score",$data);
+        }
+      }
+      else {
+        return $this ->db->insert('score',$data);
+      }
+
+
+
+
+
     }
 
     public function set_addquiz(){

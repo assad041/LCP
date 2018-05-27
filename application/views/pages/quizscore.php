@@ -32,7 +32,7 @@
 
                                               <h2 class="text-success"><i class="fa fa-check-circle"></i> Module '.$this->input->post('quizno').' Reviw Quiz</h2>
                                               <h4 style="color:red;"> <i class="fa fa-times"></i> '.$point.'/20 points earned ('.$score.' %)</h4>
-                                               You have not pass yet. You need at least 70% to pass. Review the material and try again! You have 3 attemps every 8 hour.
+                                               You have not pass yet. You need at least 70% to pass. Review the material and try again! You have 1 attemps every 2 hour.
                                               </br></br>
                                               <input type="hidden" name="quizno" value="1">
                                               <div style="text-align:center">
