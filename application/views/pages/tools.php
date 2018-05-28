@@ -56,7 +56,16 @@
                       <p> Download Link:  http://sourceforge.net/projects/mingw/files/ </p>
                       <p>10)  <b>Ultimate++</b> : U++ is a cross platform RAD IDE that focuses on c++ programmers productivity. It features a set of libraries such as GUI and SQL. U++ works with GCC, Visual C++ and MinGW.</p>
                       <p> Download Link:  http://www.ultimatepp.org/www$uppweb$download$en-us.html</p>
+                      <div class="row">
+                        <div class="col-6" style="text-align:left">
+                          <a href="" > Previous Page</a>
+                        </div>
 
+                        <div class="col-6 " style="text-align:right">
+                           <a href=""  >Next page</a>
+                        </div>
+
+                      </div>
 
 
                     </div>

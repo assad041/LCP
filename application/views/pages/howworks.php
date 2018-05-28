@@ -81,7 +81,16 @@
 
 
                       <p>Make sure the gcc compiler is in your path and that you are running it in the directory containing the source file hello.c.</p>
+                      <div class="row">
+                        <div class="col-6" style="text-align:left">
+                          <a href="" > Previous Page</a>
+                        </div>
 
+                        <div class="col-6 " style="text-align:right">
+                           <a href=""  >Next page</a>
+                        </div>
+
+                      </div>
 
                     </div>
                   </div>

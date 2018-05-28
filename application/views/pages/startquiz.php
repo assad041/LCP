@@ -57,6 +57,13 @@
                                                 </div>
                                                 <hr>';
                                               }
+
+                                              if($qnn==0){
+                                                redirect('pages/index');
+                                              }
+
+
+
                                              ?>
                                             <div style="text-align:center">
                                               <input type="hidden" name="quizno" value="<?=$qnn?>">

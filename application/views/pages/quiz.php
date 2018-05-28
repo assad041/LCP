@@ -30,7 +30,7 @@
                                             echo '<h3 class="text-success" style="text-align:center"><i class="fa fa-unlock"></i> Quiz</h3>';
                                           }
                                           else {
-                                            echo '<h3 class="text-success" style="text-align:center"><span style="color:red"><i class="fa fa-lock"></i></span> Quiz</h3>';
+                                            echo '<h3 class="text-success" style="text-align:center"><i class="fa fa-lock"></i> Quiz</h3>';
                                           }
 
 
@@ -59,10 +59,10 @@
                                             echo '<button   class="btn waves-effect waves-light btn-success">Retake</button>';
                                           }
                                           else if($status==3) {
-                                            echo '<a href=""  class="btn waves-effect waves-light btn btn-outline-secondary">Start Quiz</a>';
+                                            echo '<a href="javascript: void(0)"  class="btn waves-effect waves-light btn btn-outline-secondary">Start Quiz</a>';
                                           }
                                           else if($status==2) {
-                                            echo '<a href=""  class="btn waves-effect waves-light btn btn-outline-secondary"> Retake</a>';
+                                            echo '<a href="javascript: void(0)"  class="btn waves-effect waves-light btn btn-outline-secondary"> Retake</a>';
                                           }
 
 

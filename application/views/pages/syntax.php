@@ -328,6 +328,17 @@
                             </tr>
                             </table>
 
+                            <div class="row">
+                              <div class="col-6" style="text-align:left">
+                                <a href="" > Previous Page</a>
+                              </div>
+
+                              <div class="col-6 " style="text-align:right">
+                                 <a href=""  >Next page</a>
+                              </div>
+
+                            </div>
+
 
 
 
