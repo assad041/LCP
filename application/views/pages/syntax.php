@@ -29,7 +29,7 @@
 
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                        printf("Hello, World! \n");
+      printf("Hello, World! \n");
 
                       </code>
                       </pre>
@@ -38,15 +38,15 @@
                       <p>Given below are two different statements &minus;</p>
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                          printf("Hello, World! \n");
-                          return 0;
+      printf("Hello, World! \n");
+      return 0;
                       </code>
                       </pre>
                       <h3 class="text-info" style="text-align:center">Comments</h3>
                       <p>Comments are like helping text in your C program and they are ignored by the compiler. They start with /* and terminate with the characters */ as shown below &minus;</p>
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                          /* my first program in C */
+      /* my first program in C */
                       </code>
                       </pre>
                       <p>You cannot have comments within comments and they do not occur within a string or character literals.</p>
@@ -55,8 +55,8 @@
                       <p>C does not allow punctuation characters such as @, $, and % within identifiers. C is a <b>case-sensitive</b> programming language. Thus, <i>Manpower</i> and <i>manpower</i> are two different identifiers in C. Here are some examples of acceptable identifiers &minus;</p>
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                          mohd       zara    abc   move_name  a_123
-                          myname50   _temp   j     a23b9      retVal
+      mohd       zara    abc   move_name  a_123
+      myname50   _temp   j     a23b9      retVal
 
                       </code>
                       </pre>
@@ -123,13 +123,13 @@
                       <p>Whitespace is the term used in C to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins. Therefore, in the following statement &minus;</p>
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                          int age;
+      int age;
                       </code>
                       </pre>
                       <p>there must be at least one whitespace character (usually a space) between int and age for the compiler to be able to distinguish them. On the other hand, in the following statement &minus;</p>
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                          fruit = apples + oranges;   // get the total fruit
+      fruit = apples + oranges;   // get the total fruit
                       </code>
                       </pre>
                       <p>no whitespace characters are necessary between fruit and =, or between = and apples, although you are free to include some if you wish to increase readability.</p>
@@ -227,21 +227,21 @@
                         <p>To get the exact size of a type or a variable on a particular platform, you can use the <b>sizeof</b> operator. The expressions <i>sizeof(type)</i> yields the storage size of the object or type in bytes. Given below is an example to get the size of int type on any machine &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            #include &lt;stdio.h&gt;
-                            #include &lt;limits.h&gt;
+      #include &lt;stdio.h&gt;
+      #include &lt;limits.h&gt;
 
-                            int main() {
-                               printf("Storage size for int : %d \n", sizeof(int));
+      int main() {
+         printf("Storage size for int : %d \n", sizeof(int));
 
-                               return 0;
-                            }
+         return 0;
+      }
 
                             </code>
                         </pre>
                         <p>When you compile and execute the above program, it produces the following result on Linux &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            Storage size for int : 4
+      Storage size for int : 4
 
                             </code>
                         </pre>
@@ -276,27 +276,27 @@
                           <p>The header file float.h defines macros that allow you to use these values and other details about the binary representation of real numbers in your programs. The following example prints the storage space taken by a float type and its range values &minus;</p>
                           <pre class="prettyprint notranslate">
                             <code class="c++">
-                              #include &lt;stdio.h&gt;
-                              #include &lt;float.h&gt;
+      #include &lt;stdio.h&gt;
+      #include &lt;float.h&gt;
 
-                              int main() {
-                                 printf("Storage size for float : %d \n", sizeof(float));
-                                 printf("Minimum float positive value: %E\n", FLT_MIN );
-                                 printf("Maximum float positive value: %E\n", FLT_MAX );
-                                 printf("Precision value: %d\n", FLT_DIG );
+      int main() {
+         printf("Storage size for float : %d \n", sizeof(float));
+         printf("Minimum float positive value: %E\n", FLT_MIN );
+         printf("Maximum float positive value: %E\n", FLT_MAX );
+         printf("Precision value: %d\n", FLT_DIG );
 
-                                 return 0;
-                              }
+         return 0;
+      }
 
                               </code>
                           </pre>
                           <p>When you compile and execute the above program, it produces the following result on Linux &minus;</p>
                           <pre class="prettyprint notranslate">
                             <code class="c++">
-                              Storage size for float : 4
-                              Minimum float positive value: 1.175494E-38
-                              Maximum float positive value: 3.402823E+38
-                              Precision value: 6
+      Storage size for float : 4
+      Minimum float positive value: 1.175494E-38
+      Maximum float positive value: 3.402823E+38
+      Precision value: 6
 
 
                               </code>

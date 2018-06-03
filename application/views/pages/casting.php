@@ -25,23 +25,23 @@
                         <h3 class="text-info" style="text-align:center">Type Casting</h3>
                         <p>Type casting is a way to convert a variable from one data type to another data type. For example, if you want to store a 'long' value into a simple integer then you can type cast 'long' to 'int'. You can convert the values from one type to another explicitly using the <b>cast operator</b> as follows &minus;</p>
                         <pre class="prettyprint notranslate">
-                          <code class="c++">
-                        (type_name) expression
+                        <code class="c++">
+      (type_name) expression
                         </code>
                         </pre>
                         <p>Consider the following example where the cast operator causes the division of one integer variable by another to be performed as a floating-point operation &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            #include &lt;stdio.h&gt;
+      #include &lt;stdio.h&gt;
 
-                            main() {
+      main() {
 
-                               int sum = 17, count = 5;
-                               double mean;
+         int sum = 17, count = 5;
+         double mean;
 
-                               mean = (double) sum / count;
-                               printf("Value of mean : %f\n", mean );
-                            }
+         mean = (double) sum / count;
+         printf("Value of mean : %f\n", mean );
+      }
                         </code>
                         </pre>
                         <p>When the above code is compiled and executed, it produces the following result &minus;</p>
@@ -59,23 +59,23 @@
                           <p>Integer promotion is the process by which values of integer type "smaller" than <b>int</b> or <b>unsigned int</b> are converted either to <b>int</b> or <b>unsigned int</b>. Consider an example of adding a character with an integer &minus;</p>
                           <pre class="prettyprint notranslate">
                             <code class="c++">
-                              #include &lt;stdio.h&gt;
+      #include &lt;stdio.h&gt;
 
-                              main() {
+      main() {
 
-                                 int  i = 17;
-                                 char c = 'c'; /* ascii value is 99 */
-                                 int sum;
+         int  i = 17;
+         char c = 'c'; /* ascii value is 99 */
+         int sum;
 
-                                 sum = i + c;
-                                 printf("Value of sum : %d\n", sum );
-                              }
+         sum = i + c;
+         printf("Value of sum : %d\n", sum );
+      }
                             </code>
                           </pre>
                           <p>When the above code is compiled and executed, it produces the following result &minus;</p>
                           <pre class="prettyprint notranslate">
                             <code class="c++">
-                              Value of sum : 116
+      Value of sum : 116
                             </code>
                           </pre>
                           <p>Here, the value of sum is 116 because the compiler is doing integer promotion and converting the value of 'c' to ASCII before performing the actual addition operation.</p>
@@ -85,23 +85,23 @@
                           <p>The usual arithmetic conversions are not performed for the assignment operators, nor for the logical operators &amp;&amp; and ||. Let us take the following example to understand the concept &minus;</p>
                           <pre class="prettyprint notranslate">
                             <code class="c++">
-                              #include &lt;stdio.h&gt;
+      #include &lt;stdio.h&gt;
 
-                              main() {
+      main() {
 
-                                 int  i = 17;
-                                 char c = 'c'; /* ascii value is 99 */
-                                 float sum;
+         int  i = 17;
+         char c = 'c'; /* ascii value is 99 */
+         float sum;
 
-                                 sum = i + c;
-                                 printf("Value of sum : %f\n", sum );
-                              }
+         sum = i + c;
+         printf("Value of sum : %f\n", sum );
+      }
                             </code>
                           </pre>
                           <p>When the above code is compiled and executed, it produces the following result &minus;</p>
                           <pre class="prettyprint notranslate">
                             <code class="c++">
-                              Value of sum : 116.000000
+      Value of sum : 116.000000
                             </code>
                           </pre>
 
@@ -111,7 +111,7 @@
                             </div>
 
                             <div class="col-6 " style="text-align:right">
-                               <a href=""  >Next page</a>
+                               <a href="" >Next page</a>
                             </div>
 
                           </div>

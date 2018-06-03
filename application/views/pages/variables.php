@@ -63,17 +63,17 @@
                         <p>A variable definition tells the compiler where and how much storage to create for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            type variable_list;
+      type variable_list;
 
                         </code>
                         </pre>
                         <p>Here, <b>type</b> must be a valid C data type including char, w_char, int, float, double, bool, or any user-defined object; and <b>variable_list</b> may consist of one or more identifier names separated by commas. Some valid declarations are shown here &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            int    i, j, k;
-                            char   c, ch;
-                            float  f, salary;
-                            double d;
+      int    i, j, k;
+      char   c, ch;
+      float  f, salary;
+      double d;
 
                         </code>
                         </pre>
@@ -81,17 +81,17 @@
                         <p>Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression as follows &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            type variable_name = value;
+      type variable_name = value;
 
                         </code>
                         </pre>
                         <p>Some examples are &minus;</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            extern int d = 3, f = 5;    // declaration of d and f.
-                            int d = 3, f = 5;           // definition and initializing d and f.
-                            byte z = 22;                // definition and initializes z.
-                            char x = 'x';               // the variable x has the value 'x'.
+      extern int d = 3, f = 5;    // declaration of d and f.
+      int d = 3, f = 5;           // definition and initializing d and f.
+      byte z = 22;                // definition and initializes z.
+      char x = 'x';               // the variable x has the value 'x'.
 
                         </code>
                         </pre>
@@ -107,9 +107,9 @@
                         <p>It must be declared at the start of the block.</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            void function1(){
-                            int x=10;//local variable
-                            }
+      void function1(){
+      int x=10;//local variable
+      }
                         </code>
                         </pre>
 
@@ -119,10 +119,10 @@
                         It must be declared at the start of the block.</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            int value=20;//global variable
-                            void function1(){
-                            int x=10;//local variable
-                            }
+      int value=20;//global variable
+      void function1(){
+      int x=10;//local variable
+      }
                         </code>
                         </pre>
 
@@ -132,13 +132,13 @@
                         It retains its value between multiple function calls.</p>
                         <pre class="prettyprint notranslate">
                           <code class="c++">
-                            void function1(){
-                            int x=10;//local variable
-                            static int y=10;//static variable
-                            x=x+1;
-                            y=y+1;
-                            printf("%d,%d",x,y);
-                            }
+      void function1(){
+        int x=10;//local variable
+        static int y=10;//static variable
+        x=x+1;
+        y=y+1;
+        printf("%d,%d",x,y);
+      }
                         </code>
                         </pre>
                         <h3 class="text-info" style="text-align:center">C – Constant</h3>
@@ -210,20 +210,20 @@
                               <code class="c++">
 
 
-                              #include &lt;stdio.h&gt;   /* Link section */
-                              int main()
-                                {
-                                const int height = 100; /*int constant*/
-                                const float number = 3.14; /*Real constant*/
-                                const char letter = 'A'; /*char constant*/
-                                const char letter_sequence[10] = "ABC"; /*string constant*/
-                                const char backslash_char = '\?'; /*special char cnst*/
-                                printf("value of height :%d \n", height );
-                                printf("value of number : %f \n", number );
-                                printf("value of letter : %c \n", letter );
-                                printf("value of letter_sequence : %s \n", letter_sequence);
-                                printf("value of backslash_char : %c \n", backslash_char);
-                                }
+      #include &lt;stdio.h&gt;   /* Link section */
+      int main()
+        {
+        const int height = 100; /*int constant*/
+        const float number = 3.14; /*Real constant*/
+        const char letter = 'A'; /*char constant*/
+        const char letter_sequence[10] = "ABC"; /*string constant*/
+        const char backslash_char = '\?'; /*special char cnst*/
+        printf("value of height :%d \n", height );
+        printf("value of number : %f \n", number );
+        printf("value of letter : %c \n", letter );
+        printf("value of letter_sequence : %s \n", letter_sequence);
+        printf("value of backslash_char : %c \n", backslash_char);
+        }
                             </code>
                             </pre>
                             <h3 class="text-info">OUTPUT:</h3>

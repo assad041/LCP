@@ -83,13 +83,13 @@
                     <p style="text-align: justify;">Below C program is a very simple and basic program in C programming language. This C program displays “Hello World!” in the output window. And, all syntax and commands in C programming are case sensitive. Also, each statement should be ended with semicolon (;) which is a statement terminator.</p>
                     <pre class="prettyprint notranslate">
                       <code class="c++">
-                        #include &lt;stdio.h&gt;
-                          int main()
-                          {
-                             /* Our first simple C basic program */
-                             printf("Hello World! ");
-                             return 0;
-                          }
+      #include &lt;stdio.h&gt;
+        int main()
+        {
+           /* Our first simple C basic program */
+           printf("Hello World! ");
+           return 0;
+        }
                         </code>
                     </pre>
                     <br>
@@ -125,28 +125,28 @@
                     <p style="text-align: justify;">You can compare all the sections of a C program with the below C program.</p>
                     <pre class="prettyprint notranslate">
                       <code class="c++">
-                      /*
-                          Documentation section
-                          C programming basics & structure of C programs
-                          Author: fresh2refresh.com
-                          Date : 01/01/2012
-                      */
+        /*
+            Documentation section
+            C programming basics & structure of C programs
+            Author: fresh2refresh.com
+            Date : 01/01/2012
+        */
 
-                      #include &lt;stdio.h&gt;   /* Link section */
-                      int total = 0;       /* Global declaration, definition section */
-                      int sum (int, int);  /* Function declaration section */
-                      int main ()          /* Main function */
-                      {
-                          printf ("This is a C basic program \n");
-                          total = sum (1, 1);
-                          printf ("Sum of two numbers : %d \n", total);
-                          return 0;
-                      }
+        #include &lt;stdio.h&gt;   /* Link section */
+        int total = 0;       /* Global declaration, definition section */
+        int sum (int, int);  /* Function declaration section */
+        int main ()          /* Main function */
+        {
+            printf ("This is a C basic program \n");
+            total = sum (1, 1);
+            printf ("Sum of two numbers : %d \n", total);
+            return 0;
+        }
 
-                      int sum (int a, int b) /* User defined function */
-                      {
-                          return a + b;      /* definition section */
-                      }
+        int sum (int a, int b) /* User defined function */
+        {
+            return a + b;      /* definition section */
+        }
                     </code>
                     </pre>
                     <h3 class="text-info">Output:</h3>

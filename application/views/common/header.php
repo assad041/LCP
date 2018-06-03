@@ -174,10 +174,10 @@
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
                             <ul aria-expanded="false" class="collapse">
-                              <li><a href="#">if-else</a></li>
-                              <li><a href="#">Nested if-else</a></li>
-                              <li><a href="#">Switch Statement</a></li>
-                              <li><a href="#">Conditional Operator</a></li>
+                              <li><a href="ifelse">if-else</a></li>
+                              <li><a href="nestedifelse">Nested if-else</a></li>
+                              <li><a href="switch">Switch Statement</a></li>
+                              <li><a href="conditionaloperator">Conditional Operator</a></li>
                               <li><a href="quiz?no=3">Quiz</a></li>
                             </ul>
                         </li>

@@ -42,14 +42,14 @@
 
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                      #include &lt;stdio.h&gt;
+      #include &lt;stdio.h&gt;
 
-                      int main() {
-                         /* my first program in C */
-                         printf("Hello, World! \n");
+      int main() {
+         /* my first program in C */
+         printf("Hello, World! \n");
 
-                         return 0;
-                      }
+         return 0;
+      }
                       </code>
                       </pre>
                       <p>Let us take a look at the various parts of the above program &minus;</p>
@@ -73,9 +73,9 @@
                       </ul>
                       <pre class="prettyprint notranslate">
                         <code class="c++">
-                          $ gcc hello.c
-                          $ ./a.out
-                          Hello, World!
+      $ gcc hello.c
+      $ ./a.out
+      Hello, World!
                       </code>
                       </pre>
 
