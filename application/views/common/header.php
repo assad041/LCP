@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from www.wrappixel.com/demos/admin-templates/admin-pro/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 24 Mar 2018 13:59:59 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,7 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
     <title>Learn C Programming</title>
-
     <!-- Bootstrap Core CSS -->
-
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <!-- This page CSS -->
@@ -104,11 +103,10 @@
                     <!-- User profile and search -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
-
-
                         <!-- ============================================================== -->
                         <!-- Profile -->
                         <!-- ============================================================== -->
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="../assets/images/users/<?php if($this->session->userdata('user_img')) { echo $this->session->userdata('user_img'); }else {
                               echo'profile.png';
@@ -151,7 +149,6 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-
                         <li class="nav-small-cap">INTRODUCTION TO C</li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 1 </span></a>
                             <ul aria-expanded="false" class="collapse">
@@ -183,39 +180,39 @@
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4 </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Loop</a></li>
-                                <li><a href="#">Nested Loop</a></li>
-                                <li><a href="#">End of File (EOF)</a></li>
+                                <li><a href="loop">Loop</a></li>
+                                <li><a href="nestedloop">Nested Loop</a></li>
+                                <li><a href="eof">End of File (EOF)</a></li>
                                 <li><a href="quiz?no=4">Quiz</a></li>
                             </ul>
                         </li>
                         <li class="nav-small-cap">STRUCTURED C PROGRAMMING</li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 1 </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Arrays </a></li>
-                                <li><a href="#">Multidimensional Arrays</a></li>
+                                <li><a href="array">Arrays </a></li>
+                                <li><a href="marray">Multidimensional Arrays</a></li>
                                 <li><a href="quiz?no=5">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 2</span></a>
                             <ul aria-expanded="false" class="collapse">
-                               <li><a href="#">String</a></li>
-                               <li><a href="#">String Operation</a></li>
+                               <li><a href="string">String</a></li>
+                               <li><a href="stringo">String Operation</a></li>
                                <li><a href="quiz?no=6">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 3</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Fuction</a></li>
-                                <li><a href="#">Recurtion Function</a></li>
+                                <li><a href="function">Fuction</a></li>
+                                <li><a href="rfunction">Recurtion Function</a></li>
                                 <li><a href="quiz?no=7">Quiz</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 4 </span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="#">Structure</a></li>
-                                <li><a href="#">Array of Structures </a></li>
-                                <li><a href="#">Structures within Structures</a></li>
+                                <li><a href="structureinc">Structure</a></li>
+                                <li><a href="astructure">Array of Structures </a></li>
+                                <li><a href="structofstruct">Structures within Structures</a></li>
                                 <li><a href="quiz?no=8">Quiz</a></li>
                             </ul>
                         </li>
@@ -250,7 +247,6 @@
                                 <li><a href="#">Linear Search</a></li>
                                 <li><a href="#">Binary Search</a></li>
                                 <li><a href="quiz?no=12">Quiz</a></li>
-
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="fa fa-calendar"></i><span class="hide-menu">Week 5 </span></a>
@@ -259,13 +255,8 @@
                                 <li><a href="#">Merge Sort</a></li>
                                 <li><a href="#">Quick Sort</a></li>
                                 <li><a href="quiz?no=13">Quiz</a></li>
-
-
                             </ul>
                         </li>
-
-
-
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -274,8 +265,6 @@
         </aside>
 
         <div class="page-wrapper">
-
-
           <?php
             if($this->session->userdata('user_name')==''){
               redirect(index);

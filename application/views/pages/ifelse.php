@@ -5,7 +5,7 @@
       <!-- ============================================================== -->
       <div class="row page-titles">
           <div class="col-md-12 ">
-              <h3 class="text-themecolor" style="text-align:center">Welcome</h3>
+              <h3 class="text-themecolor" style="text-align:center">if else</h3>
           </div>
       </div>
       <!-- ============================================================== -->
